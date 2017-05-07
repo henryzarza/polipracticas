@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PoliPrácticas - Practicantes</title>
+    <base href="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+    
+    <!-- Import styles general -->
+    <link rel="stylesheet" href="../public/css/application.min.css">
+
+    <!-- Import Libraries -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <header class="navbar navbar-toggleable-md navbar-light navbar-principal bg-green-dark">
+      <div class="collapse navbar-collapse text-center" id="navbarPrincipal">
+        <div class="float-left text-left text-white">
+          <label class="fs-mini m-0">Usuario</label>
+          <div class="dropdown fs-medium">
+            <div class="dropdown-toggle" id="dropdownNavbar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Jhon Doe
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownNavbar">
+              <a class="dropdown-item fs-medium" href="login.html">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+        <img class="hidden-xs-down logo-principal" src="../public/assets/logo.png" alt="logo Politécnico">
+        <div class="float-right text-left text-white">
+          <label class="fs-mini m-0">Fecha</label>
+          <div class="fs-medium">15/05/2017</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-secundario bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSecundario" aria-controls="navbarSecundario" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand text-white pl-3 hidden-lg-up">Menú</a>
+      <div class="collapse navbar-collapse" id="navbarSecundario">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empresas.html">Empresas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="practicantes.html">Practicantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="asesores.html">Asesores</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-5 py-4">
+      <div class="row">
+        <div class="col-12 container-cv">
+          <h4 class="text-center mb-4">Ingresar Hoja de Vida</h4>
+          <div class="row">
+            <div class="col-12 col-lg-4 mb-3">
+              <label for="photo" class="container-photo">Subir Foto</label>
+              <input type="file" accept="image/*" id="photo">
+            </div>
+            <div class="col-12 col-lg-8 mb-3">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                  <label class="label-required">Tipo de Doc. de Identificación</label>
+                  <select name="typeDocument" class="form-control">
+                    <option value="1">CC 1</option>
+                    <option value="2">CC 2</option>
+                    <option value="3">CC 3</option>
+                    <option value="4">CC 4</option>
+                    <option value="5">CC 5</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 mb-3">
+                  <label class="label-required">Número de Doc. de Identificación</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="label-required">Nombres</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                  <label class="label-required">Primer Apellido</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                  <label>Segundo Apellido</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label class="label-required">Teléfono Celular</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label class="label-required">Teléfono Fijo</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <input type="text" class="form-control">
+              </div>
+            </div>           
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label>Teléfono Fijo Auxiliar</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <label class="label-required">Dirección</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+              <label class="label-required">Población</label>
+              <select name="typeDocument" class="form-control">
+                <option value="P1">Población 1</option>
+                <option value="P2">Población 2</option>
+                <option value="P3">Población 3</option>
+                <option value="P4">Población 4</option>
+                <option value="P5">Población 5</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+              <label class="label-required">Departamento</label>
+              <select name="typeDocument" class="form-control">
+                <option value="D1">Departamento 1</option>
+                <option value="D2">Departamento 2</option>
+                <option value="D3">Departamento 3</option>
+                <option value="D4">Departamento 4</option>
+                <option value="D5">Departamento 5</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+              <label class="label-required">País</label>
+              <select name="typeDocument" class="form-control">
+                <option value="P1">País 1</option>
+                <option value="P2">País 2</option>
+                <option value="P3">País 3</option>
+                <option value="P4">País 4</option>
+                <option value="P5">País 5</option>
+              </select>
+            </div>
+            <div class="col-12 mb-3">
+              <label class="label-required">Descripción</label>
+              <textarea cols="30" rows="4" class="form-control"></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <label class="label-required">Estudios</label>
+              <div class="table-responsive">
+                <table class="table table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Institución</th>
+                      <th>Inicio</th>
+                      <th>Fin</th>
+                      <th>
+                        <a class="text-success"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <select name="typeStudent" class="form-control">
+                          <option value="type1">Primaria</option>
+                          <option value="type2">Secundaria</option>
+                          <option value="type3">Curso</option>
+                          <option value="type4">Diplomado</option>
+                          <option value="type5">Superior</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="form-control"></td>
+                      <td><input type="text" class="form-control"></td>
+                      <td><input type="text" class="form-control"></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Secundaria</td>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      <td>2014</td>
+                      <td>2017</td>
+                      <td>
+                        <a class="text-danger"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12 my-3 text-center">
+              <button class="btn btn-green-dark">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
