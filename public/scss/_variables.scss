@@ -1,0 +1,24 @@
+//Colors
+$white: white !default;
+$brown: #49412C !default;
+$blue-dark: #19596C !default;
+$green-dark: #196844 !default;
+$green-light: #369440 !default;
+$green-base: #CEE6DE;
+$yellow: #EBB641 !default;
+
+
+//Override bootstrap variables
+$brand-danger:  #FF0000 !default;
+$brand-success:  #09D056 !default;
+$brand-primary: $green-light !default;
+$brand-warning: $yellow !default;
+
+//$font-family-base: "Montserrat", sans-serif , Arial !default;
+
+//Sizes application
+$font-size-root: 14pt !default;
+$font-size-small: 9pt !default;
+$font-size-medium: 12pt !default;
+$font-size-base: 1rem !default;
+$font-size-large: 20pt !default;

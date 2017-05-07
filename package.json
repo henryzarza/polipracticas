@@ -1,0 +1,16 @@
+{
+  "name": "polipracticas",
+  "version": "1.0.0",
+  "description": "University project for the subject of project management",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Henry Zarza",
+    "email": "henryacz7@gmail.com"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "jquery": "3.2.1",
+    "tether": "1.4.0"
+  }
+}

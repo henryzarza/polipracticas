@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PoliPrácticas - Empresas</title>
+    <base href="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
+    
+    <!-- Import styles general -->
+    <link rel="stylesheet" href="../public/css/application.min.css">
+
+    <!-- Import Libraries -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar navbar-toggleable-md navbar-light navbar-principal bg-green-dark">
+      <div class="collapse navbar-collapse text-center" id="navbarPrincipal">
+        <div class="float-left text-left text-white">
+          <label class="fs-mini m-0">Usuario</label>
+          <div class="dropdown fs-medium">
+            <div class="dropdown-toggle" id="dropdownNavbar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Jhon Doe
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownNavbar">
+              <a class="dropdown-item fs-medium" href="login.html">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+        <img class="hidden-xs-down logo-principal" src="../public/assets/logo.png" alt="logo Politécnico">
+        <div class="float-right text-left text-white">
+          <label class="fs-mini m-0">Fecha</label>
+          <div class="fs-medium">15/05/2017</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-secundario bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSecundario" aria-controls="navbarSecundario" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand text-white pl-3 hidden-lg-up">Menú</a>
+      <div class="collapse navbar-collapse" id="navbarSecundario">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="empresas.html">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practicantes.html">Practicantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="asesores.html">Asesores</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <h4 class="col-12 my-3">Listado de Practicantes</h4>
+
+        <!-- Cards -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card text-center">
+            <div class="card-header bg-info">
+              Tecnología
+            </div>
+            <div class="card-block">
+              <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725597_wEL1DFaeDqZr2ExmJDrdIXiBrkhvbDZO.jpg" class="rounded mx-auto d-block mb-2" alt="Photo People">              
+              <h5 class="card-title">Pamela Rodriguez Ramirez</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis doloribus recusandae, iusto dicta, autem consequatur voluptates impedit dolore est quasi temporibus a, eveniet velit deleniti aliquam eaque, distinctio nam.</p>
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#modalPractices">Ver más</a>
+            </div>
+            <div class="card-footer text-muted">Hace 1 día</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card text-center">
+            <div class="card-header bg-warning">
+              Técnica
+            </div>
+            <div class="card-block">
+              <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725550_LsQIhnhtWkmUfJ7XMyFWAjTxtmsdlICx.jpg" class="rounded mx-auto d-block mb-2" alt="Photo People">              
+              <h5 class="card-title">Dakota Díaz Pérez</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis doloribus recusandae, iusto dicta, autem consequatur voluptates impedit dolore est quasi temporibus a, eveniet velit deleniti aliquam eaque, distinctio nam.</p>
+              <a href="#" class="btn btn-outline-warning" data-toggle="modal" data-target="#modalPractices">Ver más</a>
+            </div>
+            <div class="card-footer text-muted">Hace 2 días</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card text-center">
+            <div class="card-header bg-danger">
+              Ingeniería
+            </div>
+            <div class="card-block">
+              <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725565_vVl8Hc6kIRQsgquqdQYrz7fWFrfQAGCw.jpg" class="rounded mx-auto d-block mb-2" alt="Photo People">              
+              <h5 class="card-title">Jhon Doe Zarado</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis doloribus recusandae, iusto dicta, autem consequatur voluptates impedit dolore est quasi temporibus a, eveniet velit deleniti aliquam eaque, distinctio nam.</p>
+              <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalPractices">Ver más</a>
+            </div>
+            <div class="card-footer text-muted">Hace 3 días</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card text-center">
+            <div class="card-header bg-warning">
+              Técnica
+            </div>
+            <div class="card-block">
+              <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725596_XfWXxVwYcXXEEsMFMEgyQGkFxijnvr3J.jpg" class="rounded mx-auto d-block mb-2" alt="Photo People">              
+              <h5 class="card-title">Pedro Sánchez Pérez</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis doloribus recusandae, iusto dicta, autem consequatur voluptates impedit dolore est quasi temporibus a, eveniet velit deleniti aliquam eaque, distinctio nam.</p>
+              <a href="#" class="btn btn-outline-warning" data-toggle="modal" data-target="#modalPractices">Ver más</a>
+            </div>
+            <div class="card-footer text-muted">Hace 3 días</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card text-center">
+            <div class="card-header bg-info">
+              Tecnología
+            </div>
+            <div class="card-block">
+              <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725556_W6iwZRVje8BJ8Z1kKapKVh8gZFK4BD3X.jpg" class="rounded mx-auto d-block mb-2" alt="Photo People">              
+              <h5 class="card-title">Josh Ríos Cardona</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis doloribus recusandae, iusto dicta, autem consequatur voluptates impedit dolore est quasi temporibus a, eveniet velit deleniti aliquam eaque, distinctio nam.</p>
+              <a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#modalPractices">Ver más</a>
+            </div>
+            <div class="card-footer text-muted">Hace 3 días</div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="col-12 mt-3" aria-label="Page navigation example">
+          <ul class="pagination float-right">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalPractices" tabindex="-1" role="dialog" aria-labelledby="modalPracticesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <h5 class="modal-title" id="modalPracticesLabel">Pamela Rodriguez Ramirez</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12 col-lg-4 mb-3">
+                    <img src="https://t4.ftcdn.net/jpg/01/05/72/55/240_F_105725597_wEL1DFaeDqZr2ExmJDrdIXiBrkhvbDZO.jpg" class="rounded d-block mx-auto" alt="Photo People">              
+                  </div>
+                  <div class="col-12 col-lg-8 mb-3">
+                    <div class="row">
+                      <div class="col-12 mb-3">
+                        <label class="d-block">Documento de Identificación</label>
+                        CC 123456789
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label class="d-block">Nombres</label>
+                        Pamela
+                      </div>
+                      <div class="col-12 col-lg-6 mb-3">
+                        <label class="d-block">Primer Apellido</label>
+                        Rodriguez
+                      </div>
+                      <div class="col-12 col-lg-6 mb-3">
+                        <label class="d-block">Segundo Apellido</label>
+                        Ramirez
+                      </div>
+                    </div>
+                  </div>
+                  <label class="col-12">Teléfonos</label>
+                  <div class="col-12 col-md-6 col-lg-4 mb-3"><i class="fa fa-mobile" aria-hidden="true"></i> +57 300 500 6000</div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-3"><i class="fa fa-phone" aria-hidden="true"></i> 444 00 50</div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-3"><i class="fa fa-phone" aria-hidden="true"></i> 555 74 99</div>
+                  <div class="col-12 mb-3">
+                    <label class="d-block">Dirección</label>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Avenida Siempre Viva 123
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="d-block">Población</label>
+                    Medellín (MED)
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="d-block">Departamento</label>
+                    Antioquia (ANT)
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <label class="d-block">País</label>
+                    Colombia (COL)
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label class="d-block">Descripción</label>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum fuga, dolores officia, deserunt ad blanditiis nulla doloremque sunt numquam, saepe alias quia illo cupiditate quidem? Sapiente saepe reprehenderit expedita.
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label class="d-block">Estudios</label>
+                    <div class="table-responsive">
+                      <table class="table table-sm table-striped">
+                        <thead>
+                          <tr>
+                            <th>Tipo</th>
+                            <th>Institución</th>
+                            <th>Inicio</th>
+                            <th>Fin</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Primaria</td>
+                            <td>Nesciunt expedita</td>
+                            <td>2000</td>
+                            <td>2005</td>
+                          </tr>
+                          <tr>
+                            <td>Secundaria</td>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>2006</td>
+                            <td>2011</td>
+                          </tr>
+                          <tr>
+                            <td>Superior</td>
+                            <td>Id quas harum aperiam eos alias</td>
+                            <td>2014</td>
+                            <td>2016</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregarlo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
