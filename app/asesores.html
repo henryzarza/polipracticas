@@ -6,14 +6,10 @@
     <base href="index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico">
-    
+
     <!-- Import styles general -->
     <link rel="stylesheet" href="../public/css/application.min.css">
-
-    <!-- Import Libraries -->
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/tether/dist/js/tether.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='../node_modules/fullcalendar/dist/fullcalendar.css' />
 
   </head>
 
@@ -65,10 +61,32 @@
 
     <div class="container-fluid">
       <div class="row">
-        <h4 class="col-12">Horario</h4>
+        <div id='calendar'></div>
       </div>
     </div>
 
+    <!-- Import Libraries -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/tether/dist/js/tether.min.js"></script>
+    <script src='../node_modules/moment/min/moment.min.js'></script>
+    <script src='../node_modules/fullcalendar/dist/fullcalendar.min.js'></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      // page is now ready, initialize the calendar...
+        $('#calendar').fullCalendar({
+          dayClick: function() {
+            confirm('Desea agendar cita?')
+          },
+          "header": {
+            left:   'prev, next, today',
+            center: 'title',
+            right:  ' month, basicWeek, basicDay',
+          }
+
+        })
+      });
+    </script>
   </body>
 
 </html>
